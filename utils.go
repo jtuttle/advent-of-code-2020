@@ -2,6 +2,7 @@ package main
 
 import (
 	"io/ioutil"
+	"math"
 	"strings"
 	"strconv"
 )
@@ -33,4 +34,8 @@ func ConvertToInts(strings []string) []int {
 	}
 
 	return vals
+}
+
+func ManhattanDistance(x1 int, y1 int, x2 int, y2 int) int {
+	return int(math.Abs(float64(x2 - x1)) + math.Abs(float64(y2 - y1)))
 }
