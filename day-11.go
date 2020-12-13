@@ -180,6 +180,6 @@ func main() {
 	fmt.Println("Occupied seats when stable (part 1):", CountOccupied(adjacentGrid))
 
 	lineOfSightGrid := StepUntilStable(inputGrid, math.MaxInt32, 5)
-	
+
 	fmt.Println("Occupied seats when stable (part 2):", CountOccupied(lineOfSightGrid))
 }
